@@ -8,7 +8,6 @@ using UnityEngine.AI;
 public class Enemy_Shadow : MonoBehaviour
 {
     public GameObject enemy;
-    public GameObject enemy_SphereRange;
     public GameObject player;
 
     [SerializeField]private Transform player_Tras;
@@ -25,12 +24,14 @@ public class Enemy_Shadow : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
 
+    private Vector3 spawnPoint;
+
 
     public void Awake()
     {
         enemy.GetComponent<SphereCollider>().radius = enemy_Range;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        timer = setTimer;
+        spawnPoint = GetComponent<Transform>().position;
 
     }
 
@@ -42,9 +43,13 @@ public class Enemy_Shadow : MonoBehaviour
 
     public void Update()
     {
-        if(player_Inrange && timer > 0)
+        if(player_Inrange || timer > 0)
         {
             navMeshAgent.destination = player_Tras.position;
+        }
+        if(timer < 0)
+        {
+            navMeshAgent.destination = spawnPoint;
         }
 
         timer -= Time.deltaTime;
