@@ -21,6 +21,8 @@ public class Enemy_Shadow : MonoBehaviour
 
     public float timer;
     public float setTimer;
+    private float player_dis;
+    public float enemy_Distance;
 
     private NavMeshAgent navMeshAgent;
 
@@ -43,16 +45,29 @@ public class Enemy_Shadow : MonoBehaviour
 
     public void Update()
     {
-        if(player_Inrange || timer > 0)
+        if(player_dis < enemy_Distance && player_Inrange)
         {
-            navMeshAgent.destination = player_Tras.position;
+            navMeshAgent.destination = transform.position;
+            timer = setTimer;
         }
-        if(timer < 0)
+        else if(player_Inrange || timer > 0)   
+        {
+
+            navMeshAgent.destination = player_Tras.position;
+
+
+            Debug.Log(player_dis);
+
+        }
+        player_dis = Vector3.Distance(transform.position, player_Tras.position);
+        if (timer < 0)
         {
             navMeshAgent.destination = spawnPoint;
         }
 
         timer -= Time.deltaTime;
+        
+        
 
 
 
@@ -82,11 +97,6 @@ public class Enemy_Shadow : MonoBehaviour
             
         }
     }
-
-    
-
-
-
 
 
 }
