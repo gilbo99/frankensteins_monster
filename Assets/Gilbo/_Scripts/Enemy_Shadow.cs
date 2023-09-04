@@ -14,10 +14,14 @@ public class Enemy_Shadow : MonoBehaviour
 
     public float enemy_Range;
     public float enemy_Speed;
+    public float enemy_AttackTimer;
+    public float enemy_AttackSetTimer;
 
     public int enemy_Damage;
 
     public bool player_Inrange;
+
+    public GameObject arm;
 
     public float timer;
     public float setTimer;
@@ -26,6 +30,8 @@ public class Enemy_Shadow : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
 
+    private Animator m_Animator;
+
     private Vector3 spawnPoint;
 
 
@@ -33,6 +39,7 @@ public class Enemy_Shadow : MonoBehaviour
     {
         enemy.GetComponent<SphereCollider>().radius = enemy_Range;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        m_Animator = arm.GetComponent<Animator>();
         spawnPoint = GetComponent<Transform>().position;
 
     }
@@ -49,15 +56,28 @@ public class Enemy_Shadow : MonoBehaviour
         {
             navMeshAgent.destination = transform.position;
             timer = setTimer;
+            if (enemy_AttackTimer <= 0 && player_Inrange)
+            {
+                m_Animator.SetBool("abletoAttack", true);
+                enemy_AttackTimer = enemy_AttackSetTimer; 
+
+            }
+            else
+            {
+                m_Animator.SetBool("abletoAttack", false);
+                enemy_AttackTimer -= Time.deltaTime;
+            }
+             
 
         }
         else if(player_Inrange || timer > 0)   
         {
 
             navMeshAgent.destination = player_Tras.position;
+            m_Animator.SetBool("abletoAttack", false);
 
 
-           
+
 
         }
         
@@ -74,6 +94,9 @@ public class Enemy_Shadow : MonoBehaviour
         {
             player_dis = Vector3.Distance(transform.position, player_Tras.position);
         }
+
+
+        
     }
 
 
