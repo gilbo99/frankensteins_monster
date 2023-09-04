@@ -54,6 +54,8 @@ public class Enemy_Shadow : MonoBehaviour
 
         timer -= Time.deltaTime;
 
+
+
     }
 
 
@@ -86,4 +88,5 @@ public class Enemy_Shadow : MonoBehaviour
 
 
 
-    }
+
+}
