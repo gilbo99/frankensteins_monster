@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Dependencies.Sqlite;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 public class Pickup_Player : MonoBehaviour
@@ -14,9 +16,14 @@ public class Pickup_Player : MonoBehaviour
     private GameObject weapon;
 
     public bool inHand;
-        
+
+    private Animator m_Animator;
 
 
+    private void Awake()
+    {
+        m_Animator = hand.GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -24,7 +31,10 @@ public class Pickup_Player : MonoBehaviour
 
 
 
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            m_Animator.SetTrigger("Player_Attack");
+        }
 
 
 
