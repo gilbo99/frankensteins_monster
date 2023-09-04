@@ -15,7 +15,7 @@ public class UIappear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            UI_Image.enabled = true;
+            //UI_Image.enabled = true;
             Debug.Log("enter");
         }
     }
@@ -24,7 +24,7 @@ public class UIappear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            UI_Image.enabled = false;
+            //UI_Image.enabled = false;
             Debug.Log("exit");
         }
     }
