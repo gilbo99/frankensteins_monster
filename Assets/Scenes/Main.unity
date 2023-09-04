@@ -5913,6 +5913,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1092369192}
     - target: {fileID: 6442741916671542054, guid: a9d1bd8dc1532954aad7c752cbce63e2, type: 3}
+      propertyPath: enemy_Distance
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442741916671542054, guid: a9d1bd8dc1532954aad7c752cbce63e2, type: 3}
       propertyPath: enemy_AttackSetTimer
       value: 2
       objectReference: {fileID: 0}
