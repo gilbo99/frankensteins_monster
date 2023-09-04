@@ -33,7 +33,9 @@ public class Pickup_Player : MonoBehaviour
         {
             hand.transform.DetachChildren();
             weapon.GetComponent<Rigidbody>().isKinematic = false;
-            
+            inHand = false;
+
+
         }
         // Bit shift the index of the layer (8) to get a bit mask
 
@@ -46,17 +48,20 @@ public class Pickup_Player : MonoBehaviour
         if (Physics.Raycast(head.transform.position, head.transform.TransformDirection(Vector3.forward), out hit, pickup_Range, layerMask))
         {
             Debug.DrawRay(head.transform.position, head.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            if(hit.collider.gameObject.CompareTag("Pickable") && Input.GetKey("e"))
+            if(hit.collider.gameObject.CompareTag("Pickable") && Input.GetKeyDown("e") && inHand == false)
             {
-                hit.collider.gameObject.transform.rotation = new Quaternion(0,0,0,0);
-                hit.collider.gameObject.transform.position = new Vector3(0,0,0);
-
-
-                hit.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-                hit.collider.gameObject.transform.parent = hand.transform;
-                hit.collider.gameObject.transform.position = hand.transform.position;
-                inHand = true;
                 weapon = hit.collider.gameObject;
+
+                weapon.transform.parent = hand.transform;
+                weapon.GetComponent<Rigidbody>().isKinematic = true;
+                weapon.transform.rotation = new Quaternion(0, 0, 0, 0);
+                weapon.transform.position = new Vector3(0, 0, 0);
+                weapon.transform.position = hand.transform.position;
+                inHand = true;
+                
+
+
+                
 
             }
             
