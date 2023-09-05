@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &879022719228614140
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 766113136470270211, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 997456607346277743, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452657521002857005, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: why do they call it oven when you of in the cold food
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302873670480220238, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      propertyPath: m_Name
+      value: WhoamI Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4452657521002857005, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7208453433223837455, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3215029446256052104}
+  m_SourcePrefab: {fileID: 100100000, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+--- !u!114 &473772238228468991 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 766113136470270211, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+  m_PrefabInstance: {fileID: 879022719228614140}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bcd35a1c0c40ccb6d472893fe2093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4730134892263580962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5590719888085987550, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+  m_PrefabInstance: {fileID: 879022719228614140}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7510729522797273843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7208453433223837455, guid: 020b15d852d5af54ca6c5e31164aa9ee, type: 3}
+  m_PrefabInstance: {fileID: 879022719228614140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3215029446256052104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7510729522797273843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45292798abd7d6d479d1c7a4f2b8ace5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  random_sayings:
+  - why do they call it oven when you of in the cold food
+  - would you rather have unlimited bacon, but no games, or, unlimited games, games,
+    but no games
+  - would you rather have unlimited bacon, but no games, or, unlimited games, games,
+    but no games
+  - Where are my royalties!!!
+  - I Am Going To Love Haveing To Do This More Often As Its Really Cool
+  - "I used to think I was indecisive. But now I\u2019m not so sure"
+  - I can tell when people are being judgmental just by looking at them.
+  - "The next time you buy a donut, complain that there\u2019s a hole in it."
+  - A cookie a day keeps your sadness away, but an entire jar of cookies a day brings
+    it back.
+  - " I don\u2019t suffer from insanity\u2014I enjoy every minute of it."
+  - "Always remember that you\u2019re unique...just like everyone else is."
+  - ' I am on a seafood diet. I see food, and I eat it.'
+  - "Communist jokes aren\u2019t funny unless everyone gets them."
+  - Whiteboards really are remarkable.
+  - If history repeats itself, I'm getting a pet dinosaur.
+  - You're in the wrong lane when everything is coming at you.
+  - I am not as think as you confused I am really!
+  - If your friends don't make fun of you, they're not really your friends.
+  - "There are three different types of people. Those who can count, and those who
+    can\u2019t."
+  - Try texting someone a random word and see what happens next.
+  - It was as easy as a walk in the park...Jurassic Park.
+  whatword: 0
+  TextSim: {fileID: 473772238228468991}
+  timer: 0
+  inRange_text: {fileID: 4730134892263580962}
