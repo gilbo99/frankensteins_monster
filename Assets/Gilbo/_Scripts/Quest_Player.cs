@@ -13,15 +13,29 @@ public class Quest_Player : MonoBehaviour
 
     public GameObject ai;
 
+    public GameObject Badmum;
+    public GameObject godmum;
+    
+
     public TextMeshPro text;
     public TextMeshProUGUI inRange_text;
     public TextConsoleSimulator TextSim;
+
+    public bool ismum;
 
     public float timer;
 
     public int line_Count;
 
 
+
+    public void Awake()
+    {
+        if(ismum)
+        {
+            godmum.transform.position = Badmum.transform.position;
+        }
+    }
     private void Update()
     {
         if(Input.GetKeyDown("f") && CanTalk)

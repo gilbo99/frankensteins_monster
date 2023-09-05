@@ -16,6 +16,8 @@ public class Enemy_Shadow : MonoBehaviour
     public float enemy_AttackTimer;
     public float enemy_AttackSetTimer;
 
+   
+
     public int enemy_Damage;
 
     public bool player_Inrange;

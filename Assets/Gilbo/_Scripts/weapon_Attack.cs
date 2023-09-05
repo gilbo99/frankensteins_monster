@@ -14,7 +14,7 @@ public class weapon_Attack : MonoBehaviour
     public GameObject m_GlassShard;
     public GameObject m_Scalpel;
 
-    private bool canAttack;
+    private bool canAttack = false;
 
     private GameObject Enemny;
 

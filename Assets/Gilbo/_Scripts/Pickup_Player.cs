@@ -24,10 +24,13 @@ public class Pickup_Player : MonoBehaviour
 
     public bool inHand;
 
-    
 
 
-    
+
+    public void Awake()
+    {
+        Application.targetFrameRate = 140;
+    }
 
     void Update()
     {
