@@ -52,7 +52,7 @@ public class Pickup_Player : MonoBehaviour
             }
             if (weapon.CompareTag("Scalpel"))
             {
-                M_Scalpel.GetComponent<Animator>().SetTrigger("Player_Attack");
+                M_Scalpel.GetComponent<Animator>().SetTrigger("Player_Scalpel");
             }
         }
 
