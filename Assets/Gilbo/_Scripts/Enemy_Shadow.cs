@@ -100,6 +100,8 @@ public class Enemy_Shadow : MonoBehaviour
     }
 
 
+
+
     public void OnTriggerEnter(Collider other)
     {
         
@@ -110,6 +112,9 @@ public class Enemy_Shadow : MonoBehaviour
             //navMeshAgent.isStopped = false;
             timer = setTimer;
         }
+
+
+
 
     }
 
