@@ -9,10 +9,7 @@ public class Player_Stats : MonoBehaviour
 
     public int player_health;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -30,8 +27,10 @@ public class Player_Stats : MonoBehaviour
         player_health -= d;
         if(player_health <= 0)
         {
-            Debug.Log("you Dead");
-            SceneManager.LoadScene("_Gilbo");
+            // Debug.Log("you Dead");
+            //SceneManager.LoadScene("_Gilbo");
+            
         }
+      
     }
 }
