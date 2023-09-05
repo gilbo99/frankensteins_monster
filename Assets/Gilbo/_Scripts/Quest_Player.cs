@@ -10,7 +10,8 @@ public class Quest_Player : MonoBehaviour
     public List<string> lines;
 
     public bool CanTalk;
-    
+
+    public GameObject ai;
 
     public TextMeshPro text;
     public TextMeshProUGUI inRange_text;
@@ -33,7 +34,12 @@ public class Quest_Player : MonoBehaviour
 
         timer -= Time.deltaTime;
 
-
+        if (lines.Count == line_Count)
+        {
+           
+            if (timer <= 0)
+                Destroy(ai);
+        }
 
         if (CanTalk)
         {
@@ -57,8 +63,13 @@ public class Quest_Player : MonoBehaviour
             timer = 1.5f;
             line_Count++;
         }
-        
-        
+        if (lines.Count == line_Count)
+        {
+            timer = 5f;
+            
+        }
+
+
     }
 
 
