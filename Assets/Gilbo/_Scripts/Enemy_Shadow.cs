@@ -11,7 +11,6 @@ public class Enemy_Shadow : MonoBehaviour
     public GameObject player;
 
     [SerializeField]private Transform player_Tras;
-
     public float enemy_Range;
     public float enemy_Speed;
     public float enemy_AttackTimer;
@@ -99,6 +98,8 @@ public class Enemy_Shadow : MonoBehaviour
         
     }
 
+    
+
 
 
 
@@ -108,7 +109,7 @@ public class Enemy_Shadow : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             player_Inrange = true;
-            Debug.Log(player_Inrange);
+            
             //navMeshAgent.isStopped = false;
             timer = setTimer;
         }
@@ -123,7 +124,7 @@ public class Enemy_Shadow : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             player_Inrange = false;
-            Debug.Log(player_Inrange);
+            
             //navMeshAgent.isStopped = true;
             
         }

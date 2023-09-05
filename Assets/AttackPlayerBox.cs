@@ -23,7 +23,7 @@ public class AttackPlayerBox : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player.GetComponent<Player_Stats>().TakeDamaged(1);
-            Debug.Log("killing player");
+            //Debug.Log("killing player");
         }
     }
 

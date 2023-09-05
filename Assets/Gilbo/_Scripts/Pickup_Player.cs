@@ -17,17 +17,17 @@ public class Pickup_Player : MonoBehaviour
     public GameObject M_GlassShard;
     public GameObject M_Scalpel;
 
-    private GameObject weapon;
+
+    
+
+    public GameObject weapon;
 
     public bool inHand;
 
-    private Animator m_Animator;
+    
 
 
-    private void Awake()
-    {
-        
-    }
+    
 
     void Update()
     {
@@ -35,32 +35,14 @@ public class Pickup_Player : MonoBehaviour
 
 
 
-        if (Input.GetMouseButtonDown(0) && weapon != null)
-        {
-            
-            if (weapon.CompareTag("Bat"))
-            {
-                M_Bat.GetComponent<Animator>().SetTrigger("Player_Attack");
-            }
-            if (weapon.CompareTag("FlashLight"))
-            {
-                M_FlashLight.GetComponent<Animator>().SetTrigger("Attack_Flashlight");
-            }
-            if (weapon.CompareTag("GlassShard"))
-            {
-                M_GlassShard.GetComponent<Animator>().SetTrigger("Attack_GlassShard");
-            }
-            if (weapon.CompareTag("Scalpel"))
-            {
-                M_Scalpel.GetComponent<Animator>().SetTrigger("Player_Scalpel");
-            }
-        }
+        
 
 
 
 
         if (inHand == true && Input.GetKeyDown("e"))
         {
+            weapon.transform.GetChild(0).gameObject.GetComponent<weapon_Attack>().enabled = false;
 
             if (weapon.CompareTag("Bat"))
             {
@@ -113,6 +95,7 @@ public class Pickup_Player : MonoBehaviour
                     weapon.transform.rotation = new Quaternion(0, 0, 0, 0);
                     weapon.transform.position = new Vector3(0, 0, 0);
                     weapon.transform.position = M_Bat.transform.position;
+                    
                    
                 }
                 
@@ -151,6 +134,7 @@ public class Pickup_Player : MonoBehaviour
 
                     
                 }
+                weapon.transform.GetChild(0).gameObject.GetComponent<weapon_Attack>().enabled = true;
                 inHand = true;
 
 
