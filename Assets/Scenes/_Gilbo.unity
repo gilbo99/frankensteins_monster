@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 740744831}
   - component: {fileID: 740744830}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Mum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -822,13 +822,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - 1
-  - 2
-  - 3
-  - 4
+  - Hello there hunny!
+  - Im so tied now that im very sick...
+  - I need you to go get me some medecine.
+  - Be quick for I think I dont have long.
   CanTalk: 0
   text: {fileID: 2089249570}
   inRange_text: {fileID: 1478711500}
+  TextSim: {fileID: 2089249572}
   timer: 0
   line_Count: 0
 --- !u!1 &1077760670 stripped
@@ -1721,6 +1722,7 @@ GameObject:
   - component: {fileID: 2089249571}
   - component: {fileID: 2089249570}
   - component: {fileID: 2089249569}
+  - component: {fileID: 2089249572}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1895,6 +1897,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2089249572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089249567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bcd35a1c0c40ccb6d472893fe2093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.05
 --- !u!1001 &7550244312021475299
 PrefabInstance:
   m_ObjectHideFlags: 0

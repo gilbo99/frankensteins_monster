@@ -27,10 +27,7 @@ public class Pickup_Player : MonoBehaviour
     
 
 
-    private void Awake()
-    {
-        
-    }
+    
 
     void Update()
     {

@@ -9,18 +9,17 @@ namespace TMPro.Examples
         private TMP_Text m_TextComponent;
         private bool hasTextChanged;
         public float speed;
+        private int visibleCharacters;
 
         void Awake()
         {
             m_TextComponent = gameObject.GetComponent<TMP_Text>();
-            StartCoroutine(RevealCharacters(m_TextComponent));
         }
 
 
         void Start()
         {
-            StartCoroutine(RevealCharacters(m_TextComponent));
-            //StartCoroutine(RevealWords(m_TextComponent));
+             //StartCoroutine(RevealWords(m_TextComponent));
         }
 
 
@@ -37,11 +36,20 @@ namespace TMPro.Examples
 
 
         // Event received when the text object has changed.
-        void ON_TEXT_CHANGED(Object obj)
+        public void ON_TEXT_CHANGED(Object obj)
         {
             hasTextChanged = true;
         }
 
+        public void TextSwapped()
+        {
+            visibleCharacters = 0;
+        }
+        public void PlayText()
+        {
+            StopAllCoroutines();
+            StartCoroutine(RevealCharacters(m_TextComponent));
+        }
 
         /// <summary>
         /// Method revealing the text one character at a time.
@@ -54,7 +62,6 @@ namespace TMPro.Examples
             TMP_TextInfo textInfo = textComponent.textInfo;
 
             int totalVisibleCharacters = textInfo.characterCount; // Get # of Visible Character in text object
-            int visibleCount = 0;
 
             while (true)
             {
@@ -70,10 +77,10 @@ namespace TMPro.Examples
                //     visibleCount = 0;
                // }
 
-                textComponent.maxVisibleCharacters = visibleCount; // How many characters should TextMeshPro display?
+                textComponent.maxVisibleCharacters = visibleCharacters; // How many characters should TextMeshPro display?
 
                 yield return new WaitForSeconds(speed);
-                visibleCount += 1;
+                visibleCharacters += 1;
 
                 yield return null;
             }

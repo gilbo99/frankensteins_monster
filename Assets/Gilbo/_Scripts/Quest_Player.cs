@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using TMPro.Examples;
+using UnityEngine.UI;
 
 public class Quest_Player : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class Quest_Player : MonoBehaviour
 
     public TextMeshPro text;
     public TextMeshProUGUI inRange_text;
+    public TextConsoleSimulator TextSim;
 
     public float timer;
 
@@ -48,6 +51,8 @@ public class Quest_Player : MonoBehaviour
     {
         if (lines.Count != line_Count && timer <= 0)
         {
+            TextSim.TextSwapped();
+            TextSim.PlayText();
             text.text = lines[line_Count];
             timer = 1.5f;
             line_Count++;
