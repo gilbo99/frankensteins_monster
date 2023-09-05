@@ -7,6 +7,9 @@ public class Inventory : MonoBehaviour
     public int Pill;
     public int Drugs;
     public Light WorldLight;
+    public List<GameObject> spawnable;
+    public List<GameObject> weaponds;
+    public bool lights;
     public void PickUpItem(int ItemIndex)
     {
         switch(ItemIndex)
@@ -24,12 +27,27 @@ public class Inventory : MonoBehaviour
     {
         if(Pill >= 1)
         {
-            PillCollected();
+            if (!lights)
+            {
+                PillCollected();
+            }
         }
     }
 
     public void PillCollected()
     {
         WorldLight.intensity = 0;
+
+        for(int i = 0; i < spawnable.Count; i++)
+        {
+            spawnable[i].SetActive(true);
+        }
+
+        for(int i = 0; i < weaponds.Count; i++)
+        {
+            weaponds[i].SetActive(true);
+        }
+
+
     }
 }
