@@ -28,9 +28,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5324866204252616358}
+  - {fileID: 4889209103358679010}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5698969349300833918
 GameObject:
@@ -62,7 +62,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5324866204252616358}
+  m_Father: {fileID: 4889209103358679010}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
 --- !u!33 &8620147969306361847
@@ -93,7 +93,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: def614b995bafbb44890a428777ae046, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,7 +145,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5324866204252616358}
+  m_Father: {fileID: 4889209103358679010}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
 --- !u!33 &7523090097212780265
@@ -176,7 +176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4874126678125670354, guid: 431d813b30a8e8245af6232259014d73, type: 3}
+  - {fileID: 2100000, guid: 5361f95b59811374bad055e4be87c339, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -250,6 +250,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6093592463355912122, guid: 431d813b30a8e8245af6232259014d73, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: def614b995bafbb44890a428777ae046, type: 2}
+    - target: {fileID: -1461304994638716399, guid: 431d813b30a8e8245af6232259014d73, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5361f95b59811374bad055e4be87c339, type: 2}
+    - target: {fileID: -1461304994638716399, guid: 431d813b30a8e8245af6232259014d73, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5361f95b59811374bad055e4be87c339, type: 2}
+    - target: {fileID: -678588488315902003, guid: 431d813b30a8e8245af6232259014d73, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5361f95b59811374bad055e4be87c339, type: 2}
     - target: {fileID: 919132149155446097, guid: 431d813b30a8e8245af6232259014d73, type: 3}
       propertyPath: m_Name
       value: Hallway_Modular_Scene (1)
@@ -265,7 +281,7 @@ PrefabInstance:
       addedObject: {fileID: 4606492662894955183}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431d813b30a8e8245af6232259014d73, type: 3}
---- !u!4 &5324866204252616358 stripped
+--- !u!4 &4889209103358679010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 431d813b30a8e8245af6232259014d73, type: 3}
   m_PrefabInstance: {fileID: 4923363183704518665}
