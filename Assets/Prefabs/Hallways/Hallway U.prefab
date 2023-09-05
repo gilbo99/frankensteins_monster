@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4829740091068388807}
+  m_Father: {fileID: 6626572401409642451}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
 --- !u!33 &140402107443313786
@@ -113,7 +113,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4829740091068388807}
+  m_Father: {fileID: 6626572401409642451}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
 --- !u!33 &1994110564662616583
@@ -196,7 +196,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4829740091068388807}
+  m_Father: {fileID: 6626572401409642451}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
 --- !u!33 &8831538740247287208
@@ -277,7 +277,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4829740091068388807}
+  - {fileID: 6626572401409642451}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -352,7 +352,7 @@ PrefabInstance:
       addedObject: {fileID: 1671132814881271475}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431d813b30a8e8245af6232259014d73, type: 3}
---- !u!4 &4829740091068388807 stripped
+--- !u!4 &6626572401409642451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 431d813b30a8e8245af6232259014d73, type: 3}
   m_PrefabInstance: {fileID: 6664457735059318840}
