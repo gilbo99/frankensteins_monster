@@ -8,6 +8,7 @@ namespace TMPro.Examples
     {
         private TMP_Text m_TextComponent;
         private bool hasTextChanged;
+        public float speed;
 
         void Awake()
         {
@@ -64,12 +65,13 @@ namespace TMPro.Examples
 
                // if (visibleCount > totalVisibleCharacters)
                // {
-               //     yield return new WaitForSeconds(2.0f);
+               //   yield return new WaitForSeconds(20.0f);
                //     visibleCount = 0;
                // }
 
                 textComponent.maxVisibleCharacters = visibleCount; // How many characters should TextMeshPro display?
 
+                yield return new WaitForSeconds(speed);
                 visibleCount += 1;
 
                 yield return null;
