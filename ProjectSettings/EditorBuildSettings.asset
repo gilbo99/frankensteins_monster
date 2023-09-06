@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/_Gilbo.unity
-    guid: b2347a59edbf29249a41313ab5d58dab
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5ce7865d5ba45dc4db9043a7b4f748fa
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
