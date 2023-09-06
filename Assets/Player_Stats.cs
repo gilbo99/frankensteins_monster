@@ -28,7 +28,7 @@ public class Player_Stats : MonoBehaviour
         if(player_health <= 0)
         {
             // Debug.Log("you Dead");
-            //SceneManager.LoadScene("_Gilbo");
+            SceneManager.LoadScene("_Gilbo");
             
         }
       
