@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/AsyncScenes/Scene_1.unity
-    guid: b64c77b6a62c0924a8ed97f1f62ac7e5
+    path: Assets/Scenes/_Gilbo.unity
+    guid: b2347a59edbf29249a41313ab5d58dab
   - enabled: 1
-    path: Assets/Scenes/AsyncScenes/Scene_2.unity
-    guid: 2001370ffb1aaf149b61a42c22e27039
-  - enabled: 1
-    path: Assets/Scenes/AsyncScenes/Scene_3.unity
-    guid: e4bb2bf32a6359c4baca6bf6d5c7605b
+    path: Assets/Scenes/Main.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
