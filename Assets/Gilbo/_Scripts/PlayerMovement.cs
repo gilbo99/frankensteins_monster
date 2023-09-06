@@ -42,8 +42,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        
         // If the variable "controller" is empty...
         if (controller == null)
         {

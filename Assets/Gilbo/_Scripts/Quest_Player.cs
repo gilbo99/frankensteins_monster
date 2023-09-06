@@ -23,6 +23,8 @@ public class Quest_Player : MonoBehaviour
 
     public bool ismum;
 
+    public bool killmum;
+
     public float timer;
 
     public int line_Count;
@@ -44,7 +46,10 @@ public class Quest_Player : MonoBehaviour
             
         }
 
-
+        if(killmum && timer <= 0)
+        {
+            Application.Quit();
+        }
 
         timer -= Time.deltaTime;
 
@@ -80,6 +85,11 @@ public class Quest_Player : MonoBehaviour
         if (lines.Count == line_Count)
         {
             timer = 5f;
+            if(ismum)
+            {
+                timer = 2f;
+                killmum = true;
+            }
             
         }
 
